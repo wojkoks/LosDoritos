@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SatoshiBold';
+    src: url('../fonts/Satoshi-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+  
+  
+*{
+    box-sizing: border-box;
+}
+
+#pasek {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 83px;
+    width: 100vw;
+    padding-left: 48px;
+    padding-right: 48px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+#logo {
+    display: flex;
+    font-family: 'SatoshiBold';
+    font-size: 32px;
+    width: 150px;
+}
+#logo img{
+    height: 40.3px;
+    width: 32px;
+}
+#logo span{
+    padding-left: 10px;
+}
+#searchBar{
+    width: 740px;
+    height:54px;
+    background: #E9E9E9;
+    border-radius: 93px;
+}
+#notifications{
+    display: flex;
+    width: 170px;
+    justify-content: space-between;
+}
+/* #notifications div{
+    width:100%;
+} */

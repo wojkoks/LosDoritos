@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SatoshiBold';
+    src: url('../fonts/Satoshi-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+#mainContent{
+    display: flex;
+    flex-direction: column;
+    font-family:'Satoshi';
+    padding-top: 64px;
+    padding-left: 48px;
+    padding-right: 48px;
+
+}
+#mainContent span{
+    text-align: left;
+    font-size: 96px;
+    font-weight: 700;
+}
