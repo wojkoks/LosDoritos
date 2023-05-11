@@ -3,10 +3,10 @@ import { CTutorTile } from './CTutorTile';
 import './CTutorList.css';
 
 
-export const CTutorList = ()=>{
+export const CTutorList = ({children})=>{
     return (
-        <div>
-            <CTutorTile/>
+        <div id='list'>
+            {children}
         </div>
     )
 }
