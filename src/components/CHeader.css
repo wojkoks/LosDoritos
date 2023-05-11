@@ -16,7 +16,23 @@
     box-sizing: border-box;
 }
 
-#pasek {
+.pasek {
+    display: flex;
+    z-index: 999;
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 83px;
+    top:-83px;
+    width: 100vw;
+    padding-left: 48px;
+    padding-right: 48px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    transition: top 0.3s ease-in-out;
+}
+.pasek.show{
     z-index: 999;
     position: fixed;
     display: flex;
@@ -24,11 +40,13 @@
     align-items: center;
     justify-content: space-between;
     height: 83px;
+    top:0px;
     width: 100vw;
     padding-left: 48px;
     padding-right: 48px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
     background-color: white;
+    transition: top 0.3s ease-in-out;
 }
 
 #logo {

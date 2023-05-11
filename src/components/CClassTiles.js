@@ -5,8 +5,9 @@ export const CClassTiles = ()=>{
     return (
         <div>
             <div id='tiles'>
-                <div className='tile' id='student'><span>Uczeń</span></div>
-                <div className='tile' id='tutor'><span>Korepetytor</span></div>
+                <div className='tile' id='main'><span><a style={{fontSize:"7rem"}}>Hej!</a><br></br> Jesteś uczniem <br/> lub korepetytorem?</span>
+                <div id='circle'></div>
+                </div>
             </div>
         </div>
     )

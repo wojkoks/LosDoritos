@@ -15,7 +15,6 @@ export const CContent = ()=>{
                         <CTutorTile rotation="-2deg"/>
                         <CTutorTile rotation="-1.6deg"/>
                     </CTutorList>
-
                 </CSection>
                 {/* <CTutorList/> */}
             <span>Forum</span>

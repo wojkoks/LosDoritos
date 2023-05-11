@@ -4,21 +4,28 @@
 }
 #tiles{
     display: flex;
-    flex-direction: row;
 }
 .tile{
     display:flex;
+    flex-direction: column;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     font-size: 6rem;
     font-weight: 500;
-    color: white;
-    align-items: center;
-    justify-content: center;
+    color: #FCE4EF;
+    text-align: left;
+    padding: 48px;
+    padding-top: 10px;
 }
-#student{
-    background-color: #65BE5E;
+#main{
+    background-color: #422DA8;
 }
-#tutor{
-    background-color: #F8A356;
+#circle{
+    display: flex;
+    background-color: #FCE4EF;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: 72px;
+    align-self: center;
 }

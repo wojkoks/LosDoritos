@@ -7,7 +7,7 @@ export const CSection = ({children,columns})=>{
         height:"auto",
         width:"100%",
         display:"grid",
-        gridTemplateColumns:`repeat(${columns})`
+        gridTemplateColumns:`repeat(${columns},1fr 2fr)`
     }
     return(
         <div id='grid' style={newStyles}>
