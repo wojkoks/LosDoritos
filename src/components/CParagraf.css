@@ -1,0 +1,18 @@
+#paragraf{
+    display: flex;
+    align-content: center;
+    color: black;
+    text-align: left;
+    margin: auto;
+    padding-top:30px;
+    margin-top: 0;
+    font-size:2rem;
+}
+#titleShow{
+    font-size: 7rem;
+    background-color: red;
+
+}
+#titleHide{
+    display: none;
+}

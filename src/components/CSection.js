@@ -1,6 +1,5 @@
 import React from 'react';
 import './CSection.css';
-import { CTutorList } from './CTutorList';
 export const CSection = ({children,columns})=>{
     const newStyles = {
         color:"white",

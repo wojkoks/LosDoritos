@@ -8,9 +8,13 @@ import profile from '../icons/Profile.png'
 
 export const CHeader = ({})=>{
     const [showNavbar,setShowNavbar] = useState(false);
-    const distanceFromTop = document.querySelector('#main').getBoundingClientRect().height-83;
-    useEffect(()=>{
-        const handleScroll = () =>{
+    var distanceFromTop;
+    
+    window.onload = ()=>{
+        distanceFromTop = document.querySelector('#main').getBoundingClientRect().height-83;
+        }
+        useEffect(()=>{
+            const handleScroll = () =>{
             if(window.scrollY > distanceFromTop){
                 setShowNavbar(true)
             }else{
@@ -21,8 +25,8 @@ export const CHeader = ({})=>{
         return () => {
             window.removeEventListener('scroll', handleScroll);
         }},[])
-    return (
-        <div>
+        return (
+            <div>
             <div className={showNavbar?'pasek show':'pasek'}>
                 <div id='logo'>
                     <img src={logo}/>
