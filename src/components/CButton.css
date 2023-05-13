@@ -1,0 +1,104 @@
+#CButton{
+    display: flex;
+    position: relative;
+    overflow: hidden;    
+    color: #422DA8;
+    background-color: #FF99D3;
+    border-radius: 93px;
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+#CButton:hover{
+    /* background-color: #422DA8; */
+    color:#FF99D3;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+#logText{
+    /* color: #422DA8; */
+    margin: auto;
+    white-space: nowrap;
+    z-index: 2;
+}
+#circleAnime{
+    position: absolute;
+    top:150px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    background-color: #422DA8;
+}
+#circleAnimeSlide{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top:150px;
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    border-radius: 50%;
+    background-color: #422DA8;
+}
+@-webkit-keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        width:300px;
+        height:300px;
+    }
+    100% {
+        -webkit-transform: translateY(-170px);
+        transform: translateY(-170px);
+        width:700px;
+        height:700px;
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+              width:300px;
+              height:300px;
+    }
+    100% {
+      -webkit-transform: translateY(-220px);
+              transform: translateY(-220px);
+              width:500px;
+              height:500px;
+    }
+  }
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-220px);
+            transform: translateY(-220px);
+            width:700px;
+            height:700px;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+            width:300px;
+            height:300px;
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-170px);
+            transform: translateY(-170px);
+            width:700px;
+            height:700px;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+            width:300px;
+            height:300px;
+  }
+}

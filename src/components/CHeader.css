@@ -1,17 +1,3 @@
-@font-face {
-    font-family: 'Satoshi';
-    src: url('../fonts/Satoshi-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'SatoshiBold';
-    src: url('../fonts/Satoshi-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-  
-  
 *{
     box-sizing: border-box;
 }
@@ -47,6 +33,104 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
     background-color: white;
     transition: top 0.3s ease-in-out;
+}
+#loginButton{
+    display: flex;
+    position: relative;
+    overflow: hidden;    
+    background-color: #FF99D3;
+    color: #422DA8;;
+    border-radius: 93px;
+    height: 60px;
+    width: 223px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+#loginButton:hover{
+    /* background-color: #422DA8; */
+    color:#FF99D3;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+#logText{
+    position: absolute;
+    z-index: 999;
+}
+#circleAnime{
+    position: absolute;
+    top:150px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    background-color: #422DA8;
+}
+#circleAnimeSlide{
+    position: absolute;
+    color:white;
+    width: 300px;
+    height: 300px;
+    top:150px;
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    border-radius: 50%;
+    background-color: #422DA8;
+}
+@-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-150px);
+              transform: translateY(-150px);
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+              width:300px;
+              height:300px;
+    }
+    100% {
+      -webkit-transform: translateY(-170px);
+              transform: translateY(-170px);
+              width:700px;
+              height:700px;
+    }
+  }
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+            width:700px;
+            height:700px;
+  }
+  100% {
+    -webkit-transform: translateY(170px);
+            transform: translateY(170px);
+            width:300px;
+            height:300px;
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-170px);
+            transform: translateY(-170px);
+            width:700px;
+            height:700px;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+            width:300px;
+            height:300px;
+  }
 }
 
 #logo {

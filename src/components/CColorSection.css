@@ -1,0 +1,12 @@
+#coloredSection{
+    display: flex;
+    font-family: 'Satoshi';
+    font-size: 20px;
+    flex-direction: column;
+    text-align: left;
+    margin-left: -48px;
+    margin-right: -48px;
+    padding-top: 18px;
+    padding-bottom: 64px;
+    padding-left: 48px;
+}

@@ -2,12 +2,12 @@ import React from 'react';
 import './CList.css';
 
 
-export const CList = ({children,columns})=>{
+export const CList = ({children,columns,fraction})=>{
     const newStyles = {
         display: 'grid',
-        columnGap: '70px',
+        columnGap: '30px',
         rowGap: '30px',
-        gridTemplateColumns: `repeat(${columns}, 1fr)`
+        gridTemplateColumns: `${columns}`
 
     }
     return (

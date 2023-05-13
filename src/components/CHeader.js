@@ -1,5 +1,6 @@
 import React, {useEffect,useState} from 'react';
 import './CHeader.css';
+import { CButton } from './CButton';
 
 import logo from '../icons/Logoblack.png'
 import notification from '../icons/Notification.png'
@@ -9,7 +10,8 @@ import profile from '../icons/Profile.png'
 export const CHeader = ({})=>{
     const [showNavbar,setShowNavbar] = useState(false);
     var distanceFromTop;
-    
+    // const [circleAnimation,setCircleAnimation] = useState(true);
+  
     window.onload = ()=>{
         distanceFromTop = document.querySelector('#main').getBoundingClientRect().height-83;
         }
@@ -30,10 +32,15 @@ export const CHeader = ({})=>{
             <div className={showNavbar?'pasek show':'pasek'}>
                 <div id='logo'>
                     <img src={logo}/>
-                    <span>Ćwikła</span>
+                    <span>TuterUp</span>
                 </div>
-                <div id='searchBar'><img></img></div>
-                <div id='notifications'>
+                <CButton text="Zaloguj się"/>
+                {/* <div id='loginButton' onMouseEnter={()=>{setCircleAnimation(false);}}
+                    onMouseLeave={()=>{setCircleAnimation(true);}}>
+                    <div id='logText'>Zaloguj się</div>
+                    <div id={circleAnimation===true?"circleAnime":"circleAnimeSlide"}></div> 
+                </div>*/}
+                {/* <div id='notifications'>
                     <div>
                         <img src={notification}></img>
                     </div>
@@ -43,7 +50,7 @@ export const CHeader = ({})=>{
                     <div>
                         <img src={profile}></img>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )

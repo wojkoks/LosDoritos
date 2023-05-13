@@ -1,12 +1,12 @@
 #paragraf{
     display: flex;
-    align-content: center;
-    color: black;
     text-align: left;
-    margin: auto;
-    padding-top:30px;
-    margin-top: 0;
+    min-width: 100%;
     font-size:2rem;
+    color: black;
+    padding-left: 200px;
+    padding-right: 70px;
+    padding-top: 30px;
 }
 #titleShow{
     font-size: 7rem;

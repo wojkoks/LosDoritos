@@ -10,6 +10,12 @@
     font-weight: bold;
     font-style: normal;
 }
+@font-face {
+    font-family: 'CabinetGroteskExtraBold';
+    src: url('../fonts/CabinetGrotesk-Extrabold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 #mainContent{
     display: flex;
     flex-direction: column;
@@ -23,5 +29,6 @@
     text-align: left;
     font-size: 96px;
     font-weight: 700;
-    padding-bottom: 50px;
+    font-family: 'CabinetGroteskExtraBold';
+    padding-bottom: 26px;
 }
