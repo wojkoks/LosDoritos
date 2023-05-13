@@ -6,6 +6,9 @@ import { CList } from './CList';
 import { CParagraf } from './CParagraf';
 import { CButton } from './CButton';
 import { CColorSection } from './CColorSection';
+import { CKompot } from './CKompot';
+import * as icons from './iconPaths';
+
 
 export const CContent = ()=>{
     return (
@@ -35,12 +38,20 @@ export const CContent = ()=>{
                 </CSection>
                 <CColorSection bColor="#E2C447" tColor="#FFFFFF">
                 <span>Co to TuterUp?</span>
-                Tuter pozwala uczniom i studentom na niemal<br/> natychmiastowe otrzymanie pomocy od naszych ekspertów
+                TuterUp pozwala uczniom i studentom na niemal<br/> natychmiastowe otrzymanie pomocy od naszych ekspertów
                 <CSection columns="1fr 1fr 1fr 1fr">
-                <CTutorTile rotation="0deg"/>
-                <CTutorTile rotation="0deg"/>
-                <CTutorTile rotation="0deg"/>
-                <CTutorTile rotation="0deg"/>
+                <CKompot path={icons.ClockWK} title={"Szybka pomoc"} size={"64px"}>
+                TuterUp pozwala uczniom i studentom na niemal natychmiastowe otrzymanie pomocy od naszych
+                </CKompot>
+                <CKompot path={icons.StarwhiteWK} title={"Zweryfikowani eksperci"} size={"64px"}>
+                TuterUp pozwala uczniom i studentom na niemal natychmiastowe otrzymanie pomocy od naszych
+                </CKompot>
+                <CKompot path={icons.MessageWK} title={"Łatwa komunikacja"} size={"64px"}>
+                TuterUp pozwala uczniom i studentom na niemal natychmiastowe otrzymanie pomocy od naszych
+                </CKompot>
+                <CKompot path={icons.LockWK} title={"Bezpieczeństwo"} size={"64px"}>
+                TuterUp pozwala uczniom i studentom na niemal natychmiastowe otrzymanie pomocy od naszych
+                </CKompot>
                 </CSection>
                    
                 </CColorSection>
