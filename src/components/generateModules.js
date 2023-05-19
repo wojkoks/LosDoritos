@@ -16,8 +16,6 @@ fs.readdirSync(folderPath).forEach((file) => {
 //   const moduleContent = fs.readFileSync(filePath, 'utf8');
 //   const moduleCode = `export default ${moduleContent}`; 
 
-
-
 //   const moduleFilePath = path.join(folderPath, `${moduleName}.js`);
 //   fs.writeFileSync(moduleFilePath, moduleCode);
 
